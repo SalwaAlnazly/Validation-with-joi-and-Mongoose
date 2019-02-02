@@ -1,9 +1,10 @@
 {
   "name": "javascript-es6",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/SalwaAlnazly/JavaScript-ES6/issues"
   },
-  "homepage": "https://github.com/SalwaAlnazly/JavaScript-ES6#readme"
+  "homepage": "https://github.com/SalwaAlnazly/JavaScript-ES6#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9"
+  }
 }
