@@ -1,7 +1,9 @@
 const app = require('express')()
 const logger = require('morgan')
 const users = require('./routes/users')
+const mongoose = require('mongoose')
 
+mongoose.connect('')
 // Middleware
 app.use(logger('dev'))
 
