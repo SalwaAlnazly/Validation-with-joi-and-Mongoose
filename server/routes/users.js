@@ -1,11 +1,9 @@
 const router = require('express').Router()
+const usersController = require('../controllers/users')
+
 
 router.route('/')
-.get((req, res, next) => {
-    res.status(200).json({
-        message: "You requested index page"
-    })
-})
+.get(usersController.get)
 .post()
 
 
