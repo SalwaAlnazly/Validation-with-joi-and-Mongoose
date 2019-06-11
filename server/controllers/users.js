@@ -1,7 +1,8 @@
-module.exports = {
-    get: (req, res, next) => {
-        res.status(200).json({
-            message: "You requested index page"
-        })
-    }
+const User = require('../models/user');
+
+exports.post = async (req, res, next) => {
+    const { data } = req.body
+    const newUser = await (new User({ data })).save()
+
+    res.json({ status: true, data: newUser })
 }
